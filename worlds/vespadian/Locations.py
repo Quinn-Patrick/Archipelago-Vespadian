@@ -6,7 +6,7 @@ import typing
 class VespadianLocation(Location):
     game: str = "Vespadian"
 
-locationTable: dict = {
+location_table: dict = {
     #Menendel Underground Chests:
     "Menendel Underground Corridors Chest 1": 1_220,
     "Menendel Underground Corridors Chest 2": 1_221,
@@ -110,6 +110,9 @@ locationTable: dict = {
     "Bottomless Hole B5 Chest 3": 1_159,
     "Bottomless Hole B5 Chest 4": 1_160,
     "Bottomless Hole B5 Chest 5": 1_161,
+    "Bottomless Hole Bottom Chest 1": 1_386, #Silver Key Blocked
+    "Bottomless Hole Bottom Chest 2": 1_387, #Silver Key Blocked
+    "Bottomless Hole Bottom Chest 3": 1_388, #Silver Key Blocked
 
     #The Great Between Chests:
     "The Great Between: Web of Worlds Chest 1": 1_285,
@@ -215,10 +218,10 @@ locationTable: dict = {
     "Starcrossed Citadel Stronghold Chest 2": 1_364,
     "Starcrossed Citadel Stronghold Chest 3": 1_365,
     "Starcrossed Citadel Chapel Chest 1": 1_368,
-    "Starcrossed Citadel Chapel Chest 1": 1_369,
-    "Starcrossed Citadel Chapel Chest 1": 1_370,
-    "Starcrossed Citadel Chapel Chest 1": 1_371,
-    "Starcrossed Citadel Chapel Chest 1": 1_372,
+    "Starcrossed Citadel Chapel Chest 2": 1_369,
+    "Starcrossed Citadel Chapel Chest 3": 1_370,
+    "Starcrossed Citadel Chapel Chest 4": 1_371,
+    "Starcrossed Citadel Chapel Chest 5": 1_372,
 
     #Starcrossed Citadel 2 Chests (Blocked by Waning Gibbous):
     "Starcrossed Citadel North Chamber Chest 1": 1_337,
@@ -247,5 +250,10 @@ locationTable: dict = {
     #Starcrossed Citadel 3 Chests (Blocked by Waning Gibbous + Gold Key)
     "Starcrossed Citadel Chamber of Fire Chest 1": 1_351, #Greater White Dragon Chest
     "Starcrossed Citadel Chamber of Fire Chest 2": 1_352, #Greater Red Dragon Chest
+
+    #Astrological Observatory Chests:
+    "Astrological Observatory Chest 1": 1_383,
+    "Astrological Observatory Chest 2": 1_384,
+    
 
 }
