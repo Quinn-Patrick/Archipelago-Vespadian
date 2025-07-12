@@ -66,11 +66,6 @@ def set_rules(vespadian_world):
             state.has("Ariadne", player)
         ))
 
-    add_rule(vespadian_world.get_entrance("First Continent"),
-        lambda state: (
-            state.has("Ariadne", player)
-        ))
-
     add_rule(vespadian_world.get_entrance("Bottomless Hole"),
         lambda state: (
             state.has("Adventuring License", player)
