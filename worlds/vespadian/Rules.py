@@ -8,12 +8,12 @@ def set_rules(vespadian_world):
 
     add_rule(vespadian_world.get_location("Menendel Underground Corridors Key Chest"),
         lambda state: (
-            state.has("Tunnel Key") or (options.require_lockpicking and state.has("Ariadne"))
+            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
         ))
 
     add_rule(vespadian_world.get_location("Mole Hole Ground Depths Key Chest"),
         lambda state: (
-            state.has("Mole Key") or (options.require_lockpicking and state.has("Ariadne"))
+            state.has("Mole Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
         ))
     
     add_rule(vespadian_world.get_location("Island Fortress Towers Chest 4"),
