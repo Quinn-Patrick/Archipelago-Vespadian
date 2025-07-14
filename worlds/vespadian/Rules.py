@@ -46,6 +46,11 @@ def set_rules(vespadian_world):
             state.has("Silver Key", player) or options.require_lockpicking
         ))
     
+    add_rule(vespadian_world.get_entrance("Desert Palace"),
+        lambda state: (
+            state.has("Magic Mirror", player)
+        ))
+    
     add_rule(vespadian_world.get_location("Desert Palace Audience Chamber Chest"),
         lambda state: (
             state.has("Palace Key", player) or options.require_lockpicking
