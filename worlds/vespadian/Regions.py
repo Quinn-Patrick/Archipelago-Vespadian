@@ -9,7 +9,7 @@ class VespadianRegionData(NamedTuple):
 
 def create_regions(multiworld: MultiWorld, player: int, options):
     regions: Dict[str, VespadianRegionData] = {
-        "Menu": VespadianRegionData([], ["Menendel Underground, Moonlit Shrine, Mole Hole, First Continent"]),
+        "Menu": VespadianRegionData([], ["Menendel Underground", "Moonlit Shrine", "Mole Hole", "First Continent"]),
         "Menendel Underground": VespadianRegionData([], []),
         "Moonlit Shrine": VespadianRegionData([], []),
         "Mole Hole": VespadianRegionData([], []),
@@ -243,35 +243,13 @@ def create_regions(multiworld: MultiWorld, player: int, options):
     regions["Starcrossed Citadel 2"].locations.append("Starcrossed Citadel Cavern Chest 4")
     regions["Starcrossed Citadel 3"].locations.append("Starcrossed Citadel Chamber of Fire Chest 1")
     regions["Starcrossed Citadel 3"].locations.append("Starcrossed Citadel Chamber of Fire Chest 2")
+    regions["Starcrossed Citadel 3"].locations.append("Defeat Ephemeris")
     regions["Astrological Observatory"].locations.append("Astrological Observatory Chest 1")
     regions["Astrological Observatory"].locations.append("Astrological Observatory Chest 2")
 
     # Set up the regions correctly.
     for name, data in regions.items():
         multiworld.regions.append(create_region(multiworld, player, name, data))
-
-def connect_entrances(multiworld: MultiWorld, player: int):
-    multiworld.get_entrance("Menendel Underground", player).connect(multiworld.get_region("Menendel Underground", player))
-    multiworld.get_entrance("Moonlit Shrine", player).connect(multiworld.get_region("Moonlit Shrine", player))
-    multiworld.get_entrance("Mole Hole", player).connect(multiworld.get_region("Mole Hole", player))
-    multiworld.get_entrance("First Continent", player).connect(multiworld.get_region("First Continent", player))
-    multiworld.get_entrance("Hearthaven", player).connect(multiworld.get_region("Hearthaven", player))
-    multiworld.get_entrance("Island Fortress", player).connect(multiworld.get_region("Island Fortress", player))
-    multiworld.get_entrance("Farsight", player).connect(multiworld.get_region("Farsight", player))
-    multiworld.get_entrance("Bottomless Hole", player).connect(multiworld.get_region("Bottomless Hole", player))
-    multiworld.get_entrance("The Great Between", player).connect(multiworld.get_region("The Great Between", player))
-    multiworld.get_entrance("Second Continent", player).connect(multiworld.get_region("Second Continent", player))
-    multiworld.get_entrance("Arva Mandia", player).connect(multiworld.get_region("Arva Mandia", player))
-    multiworld.get_entrance("Ancient Catacombs", player).connect(multiworld.get_region("Ancient Catacombs", player))
-    multiworld.get_entrance("Desert Palace", player).connect(multiworld.get_region("Desert Palace", player))
-    multiworld.get_entrance("Second Continent", player).connect(multiworld.get_region("Second Continent", player))
-    multiworld.get_entrance("Hideaway", player).connect(multiworld.get_region("Hideaway", player))
-    multiworld.get_entrance("Secret Underpass", player).connect(multiworld.get_region("Secret Underpass", player))
-    multiworld.get_entrance("Waterfall Temple", player).connect(multiworld.get_region("Waterfall Temple", player))
-    multiworld.get_entrance("Starcrossed Citadel 1", player).connect(multiworld.get_region("Starcrossed Citadel 1", player))
-    multiworld.get_entrance("Starcrossed Citadel 2", player).connect(multiworld.get_region("Starcrossed Citadel 2", player))
-    multiworld.get_entrance("Starcrossed Citadel 3", player).connect(multiworld.get_region("Starcrossed Citadel 3", player))
-    multiworld.get_entrance("Astrological Observatory", player).connect(multiworld.get_region("Astrological Observatory", player))
 
 def create_region(multiworld: MultiWorld, player: int, name: str, data: VespadianRegionData):
     region = Region(name, player, multiworld)
@@ -287,3 +265,27 @@ def create_region(multiworld: MultiWorld, player: int, name: str, data: Vespadia
             region.exits.append(entrance)
 
     return region
+
+def connect_entrances(multiworld: MultiWorld, player: int):
+    #Set up entrances.
+    multiworld.get_entrance("Menendel Underground", player).connect(multiworld.get_region("Menendel Underground", player))
+    multiworld.get_entrance("Moonlit Shrine", player).connect(multiworld.get_region("Moonlit Shrine", player))
+    multiworld.get_entrance("Mole Hole", player).connect(multiworld.get_region("Mole Hole", player))
+    multiworld.get_entrance("First Continent", player).connect(multiworld.get_region("First Continent", player))
+    multiworld.get_entrance("Hearthaven", player).connect(multiworld.get_region("Hearthaven", player))
+    multiworld.get_entrance("Island Fortress", player).connect(multiworld.get_region("Island Fortress", player))
+    multiworld.get_entrance("Farsight", player).connect(multiworld.get_region("Farsight", player))
+    multiworld.get_entrance("Bottomless Hole", player).connect(multiworld.get_region("Bottomless Hole", player))
+    multiworld.get_entrance("The Great Between", player).connect(multiworld.get_region("The Great Between", player))
+    multiworld.get_entrance("Second Continent", player).connect(multiworld.get_region("Second Continent", player))
+    multiworld.get_entrance("Arva Mandia", player).connect(multiworld.get_region("Arva Mandia", player))
+    multiworld.get_entrance("Ancient Catacombs", player).connect(multiworld.get_region("Ancient Catacombs", player))
+    multiworld.get_entrance("Desert Palace", player).connect(multiworld.get_region("Desert Palace", player))
+    multiworld.get_entrance("Wide World", player).connect(multiworld.get_region("Wide World", player))
+    multiworld.get_entrance("Hideaway", player).connect(multiworld.get_region("Hideaway", player))
+    multiworld.get_entrance("Secret Underpass", player).connect(multiworld.get_region("Secret Underpass", player))
+    multiworld.get_entrance("Waterfall Temple", player).connect(multiworld.get_region("Waterfall Temple", player))
+    multiworld.get_entrance("Starcrossed Citadel 1", player).connect(multiworld.get_region("Starcrossed Citadel 1", player))
+    multiworld.get_entrance("Starcrossed Citadel 2", player).connect(multiworld.get_region("Starcrossed Citadel 2", player))
+    multiworld.get_entrance("Starcrossed Citadel 3", player).connect(multiworld.get_region("Starcrossed Citadel 3", player))
+    multiworld.get_entrance("Astrological Observatory", player).connect(multiworld.get_region("Astrological Observatory", player))
