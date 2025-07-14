@@ -24,6 +24,7 @@ location_table: dict[str, VespadianLocationData] = {
     "Menendel Underground Corridors Chest 2": VespadianLocationData("Menendel Underground", 1_221),
     "Menendel Underground Corridors Chest 3": VespadianLocationData("Menendel Underground", 1_222),
     "Menendel Underground Corridors Chest 4": VespadianLocationData("Menendel Underground", 1_223),
+    "Menendel Underground Corridors Chest 5": VespadianLocation("Menendel Underground", 1_219),
     "Menendel Underground Corridors Key Chest": VespadianLocationData("Menendel Underground", 1_224), ##Blocked by tunnel key
     "Menendel Underground East Tunnel Chest 1": VespadianLocationData("Menendel Underground", 1_225),
     "Menendel Underground East Tunnel Chest 2": VespadianLocationData("Menendel Underground", 1_226),
@@ -60,8 +61,8 @@ location_table: dict[str, VespadianLocationData] = {
     "Mole Hole Ground Level Chest 3": VespadianLocationData("Mole Hole", 1_253),
     "Mole Hole Ground Level Chest 4": VespadianLocationData("Mole Hole", 1_254),
     "Mole Hole Ground Level Chest 5": VespadianLocationData("Mole Hole", 1_255),
-    "Mole Hole Ground Depths Key Chest": VespadianLocationData("Mole Hole", 1_256), #Blocked by Mole Key
-    "Mole Hole Ground Depths Chest 1": VespadianLocationData("Mole Hole", 1_257),
+    "Mole Hole Depths Key Chest": VespadianLocationData("Mole Hole", 1_256), #Blocked by Mole Key
+    "Mole Hole Depths Chest 1": VespadianLocationData("Mole Hole", 1_257),
     "Rescue Ariadne": VespadianLocationData("Mole Hole", 2_442),
 
     #Hearthaven Chests:
