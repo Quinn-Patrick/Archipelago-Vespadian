@@ -220,7 +220,7 @@ location_table: dict[str, VespadianLocationData] = {
     "Starcrossed Citadel Outer Wall Chest 2": VespadianLocationData("Starcrossed Citadel 2", 1_356), #Blocked by Waning Gibbous
     "Starcrossed Citadel Outer Wall Chest 3": VespadianLocationData("Starcrossed Citadel 1", 1_357),
     "Starcrossed Citadel Outer Wall Chest 4": VespadianLocationData("Starcrossed Citadel 1", 1_358),
-    "Starcrossed Citadel Outer Wall Chest 5": VespadianLocationData("Starcrossed Citadel 1", 1_358),
+    "Starcrossed Citadel Outer Wall Chest 5": VespadianLocationData("Starcrossed Citadel 1", 1_359),
     "Starcrossed Citadel Outer Wall Chest 6": VespadianLocationData("Starcrossed Citadel 1", 1_360),
     "Starcrossed Citadel Outer Wall Chest 7": VespadianLocationData("Starcrossed Citadel 1", 1_361),
     "Starcrossed Citadel Outer Wall Chest 8": VespadianLocationData("Starcrossed Citadel 1", 1_362),
