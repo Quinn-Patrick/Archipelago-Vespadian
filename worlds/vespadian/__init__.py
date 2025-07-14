@@ -48,6 +48,8 @@ class VespadianWorld(World):
 
         while len(item_pool) < total_locations:
             item_pool.append(self.create_item(self.get_filler_item_name()))
+
+        self.multiworld.get_location("Defeat Ephemeris", self.player).place_locked_item(self.create_item("Victory"))
         
         self.multiworld.itempool += item_pool
 

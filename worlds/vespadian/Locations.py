@@ -262,6 +262,7 @@ location_table: dict[str, VespadianLocationData] = {
     #Starcrossed Citadel 3 Chests (Blocked by Waning Gibbous + Gold Key)
     "Starcrossed Citadel Chamber of Fire Chest 1": VespadianLocationData("Starcrossed Citadel 3", 1_351), #Greater White Dragon Chest
     "Starcrossed Citadel Chamber of Fire Chest 2": VespadianLocationData("Starcrossed Citadel 3", 1_352), #Greater Red Dragon Chest
+    "Defeat Ephemeris": VespadianLocationData("Starcrossed Citadel 3", 3_000),
 
     #Astrological Observatory Chests:
     "Astrological Observatory Chest 1": VespadianLocationData("Astrological Observatory", 1_383),
