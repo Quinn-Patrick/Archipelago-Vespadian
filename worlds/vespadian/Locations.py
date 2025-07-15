@@ -24,7 +24,7 @@ location_table: dict[str, VespadianLocationData] = {
     "Menendel Underground Corridors Chest 2": VespadianLocationData("Menendel Underground", 1_221),
     "Menendel Underground Corridors Chest 3": VespadianLocationData("Menendel Underground", 1_222),
     "Menendel Underground Corridors Chest 4": VespadianLocationData("Menendel Underground", 1_223),
-    "Menendel Underground Corridors Chest 5": VespadianLocation("Menendel Underground", 1_219),
+    "Menendel Underground Corridors Chest 5": VespadianLocationData("Menendel Underground", 1_219),
     "Menendel Underground Corridors Key Chest": VespadianLocationData("Menendel Underground", 1_224), ##Blocked by tunnel key
     "Menendel Underground East Tunnel Chest 1": VespadianLocationData("Menendel Underground", 1_225),
     "Menendel Underground East Tunnel Chest 2": VespadianLocationData("Menendel Underground", 1_226),

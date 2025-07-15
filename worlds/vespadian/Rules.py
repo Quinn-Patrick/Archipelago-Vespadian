@@ -31,7 +31,7 @@ def set_rules(vespadian_world):
             state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
         ))
 
-    add_rule(vespadian_world.get_location("Mole Hole Ground Depths Key Chest"),
+    add_rule(vespadian_world.get_location("Mole Hole Depths Key Chest"),
         lambda state: (
             state.has("Mole Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
         ))
