@@ -81,6 +81,11 @@ def set_rules(vespadian_world):
             state.has("Waterfall Key", player) or options.require_lockpicking
         ))
     
+    add_rule(vespadian_world.get_location("Waterfall Temple North Court Chest"),
+        lambda state: (
+            state.has("Waterfall Key", player) or options.require_lockpicking
+        ))
+    
     add_rule(vespadian_world.get_location("Astrological Observatory Chest 2"),
         lambda state: (
             state.has("Jupiter Token", player) or options.require_lockpicking
