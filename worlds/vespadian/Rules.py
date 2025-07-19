@@ -8,47 +8,47 @@ def set_rules(vespadian_world):
 
     add_rule(vespadian_world.get_location("Menendel Underground Corridors Key Chest"),
         lambda state: (
-            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
+            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player) and state.has("Adventuring License", player))
         ))
 
     add_rule(vespadian_world.get_location("Menendel Underground Vault Chest 1"),
         lambda state: (
-            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
+            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player) and state.has("Adventuring License", player))
         ))
 
     add_rule(vespadian_world.get_location("Menendel Underground Vault Chest 2"),
         lambda state: (
-            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
+            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player) and state.has("Adventuring License", player))
         ))
 
     add_rule(vespadian_world.get_location("Menendel Underground Vault Chest 3"),
         lambda state: (
-            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
+            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player) and state.has("Adventuring License", player))
         ))
 
     add_rule(vespadian_world.get_location("Menendel Underground Vault Chest 4"),
         lambda state: (
-            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
+            state.has("Tunnel Key", player) or (options.require_lockpicking and state.has("Ariadne", player) and state.has("Adventuring License", player))
         ))
 
     add_rule(vespadian_world.get_location("Mole Hole Depths Key Chest"),
         lambda state: (
-            state.has("Mole Key", player) or (options.require_lockpicking and state.has("Ariadne", player))
+            state.has("Mole Key", player) or (options.require_lockpicking and state.has("Ariadne", player) and state.has("Adventuring License", player))
         ))
     
     add_rule(vespadian_world.get_location("Island Fortress Towers Chest 4"),
         lambda state: (
-            state.has("Fortress Key", player) or options.require_lockpicking
+            state.has("Fortress Key", player) or (options.require_lockpicking and state.has("Adventuring License", player))
         ))
     
     add_rule(vespadian_world.get_location("Gift From Maria"),
         lambda state: (
-            state.has("Fortress Key", player) or options.require_lockpicking
+            state.has("Fortress Key", player) or (options.require_lockpicking and state.has("Adventuring License", player))
         ))
     
     add_rule(vespadian_world.get_location("Island Fortress Hallway Silver Key Chest"),
         lambda state: (
-            state.has("Silver Key", player) or options.require_lockpicking
+            state.has("Silver Key", player) or (options.require_lockpicking and state.has("Adventuring License", player))
         ))
     
     add_rule(vespadian_world.get_location("Bottomless Hole Bottom Chest 1"),
