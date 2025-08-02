@@ -63,19 +63,13 @@ class VespadianWorld(World):
         return VespadianItem(name, data.classification, data.code, self.player)
 
     def set_rules(self):
-        print("Setting rules.")
-        print("Connected entrances: " + str(list(self.get_entrances())))
         set_rules(self)
 
     def create_regions(self):
-        print("Creating regions.")
         create_regions(self.multiworld, self.player, self.options)
-        print("Done creating regions.")
 
     def connect_entrances(self):
-        print("Connecting entrances.")
         connect_entrances(self.multiworld, self.player)
-        print("Connected entrances: " + str(list(self.get_entrances())))
         
     def get_filler_item_name(self) -> str:
         return self.random.choices([filler for filler in self.fillers.keys()])[0]
