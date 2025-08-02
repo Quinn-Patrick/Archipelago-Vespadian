@@ -44,7 +44,7 @@ class VespadianWorld(World):
                 continue
             item_pool += [self.create_item(name)]
         
-        total_locations = len(self.multiworld.get_unfilled_locations(self.player))
+        total_locations = len(self.multiworld.get_unfilled_locations(self.player)) - 1
 
         while len(item_pool) < total_locations:
             item_pool.append(self.create_item(self.get_filler_item_name()))
