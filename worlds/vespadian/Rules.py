@@ -88,7 +88,7 @@ def set_rules(vespadian_world):
     
     add_rule(vespadian_world.get_location("Astrological Observatory Chest 2"),
         lambda state: (
-            state.has("Jupiter Token", player) or options.require_lockpicking
+            state.has("Jupiter Token", player)
         ))
 
     add_rule(vespadian_world.get_entrance("First Continent"),
